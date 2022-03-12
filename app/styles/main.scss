@@ -1,0 +1,654 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Mulish", sans-serif;
+}
+
+body {
+  background: #fafafa;
+  //background: #000000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: red;
+  width: 1600px;
+  height: auto;
+}
+
+//general
+h2 {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 56px;
+  color: #000000;
+  mix-blend-mode: normal;
+}
+
+h3 {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 56px;
+  color: #000000;
+  mix-blend-mode: normal;
+}
+
+p {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #7d7987;
+  mix-blend-mode: normal;
+}
+//  ENCABEZADO
+.encabezado {
+  margin: 56px 193px 0px 191px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nombre {
+  width: 159px;
+  height: 41px;
+  mix-blend-mode: normal;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 24px;
+  color: #233348;
+
+  &::before {
+    content: "T";
+    align-items: flex-start;
+    text-align: center;
+    width: 40.74px;
+    height: 41px;
+    margin-right: 11px;
+    padding-top: 4px;
+    background: #458ff6;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 26px;
+    color: #ffffff;
+  }
+}
+.menu {
+  &__lista {
+    font-weight: 400;
+    font-size: 18px;
+    padding: 0px;
+    display: flex;
+    width: 544px;
+    height: 23px;
+    justify-content: space-between;
+  }
+  &__item {
+    a {
+      color: #1f1534;
+      opacity: 0.5;
+
+      &:hover {
+        font-weight: 700;
+         color: #1f1534;
+         opacity: 1;
+      }
+    }
+  }
+}
+
+//main
+
+.bloque1 {
+  margin: 84px 163px 0px 190px;
+  display: flex;
+  justify-content: space-between;
+
+  &::before {
+    content: url("../images/puntos.png");
+    position: absolute;
+    top: 160px;
+    left: -50px;
+  }
+
+  &__contenido {
+    position: relative;
+    top: 106px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 445px;
+    height: 338px;
+  }
+
+  &__title {
+    //
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    color: #000000;
+  }
+
+  &__text {
+    position: relative;
+    top: -12px;
+    width: 445px;
+    height: 96px;
+    text-align: left;
+    //
+    font-family: Mulish;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 32px;
+    color: #7d7987;
+    mix-blend-mode: normal;
+  }
+
+  &__img {
+    width: 693px;
+    height: 598px;
+  }
+}
+
+.button {
+  display: inline-block;
+  width: 200px;
+  height: 56px;
+  text-align: center;
+  justify-content: center;
+
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 60px;
+}
+
+.button--white {
+  border: 1.4px solid #458ff6;
+  box-sizing: border-box;
+  border-radius: 55px;
+  color: #458ff6;
+}
+.button--solid {
+  background-color: #458ff6;
+  border-radius: 55px;
+  color: white;
+}
+
+.our-services {
+  &__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 952px;
+    height: 177px;
+    margin: 192px 325px 0px 323px;
+  }
+
+  &__services {
+    //Preguntar
+    position: relative;
+    margin: 80px 240px 69px 240px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 37px;
+    column-gap: 36px;
+
+    &::before {
+      content: url("../images/puntos.png");
+      position: absolute;
+      right: -49.58px;
+      top: 287px;
+      z-index: -1;
+    }
+
+    &::after {
+      content: url("../images/sombra.png");
+      position: absolute;
+      left: -506px;
+      top: -259px;
+      z-index: -1;
+    }
+  }
+
+  &__title {
+    position: relative;
+    &::after {
+      content: " ";
+      display: inline-block;
+      position: absolute;
+      width: 56px;
+      height: 2px;
+      background: #000000;
+      border-radius: 5px;
+      bottom: -26px;
+      left: 448px;
+    }
+  }
+
+  &__serv {
+    display: grid;
+    grid-template-rows: 3fr 1fr 2fr;
+    padding: 0px 50px 0px 38px;
+    align-items: center;
+    background-color: white;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+    p {
+      text-align: start;
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+
+  .button--white {
+    margin: 0px 700px;
+  }
+}
+
+.leading {
+  display: flex;
+  justify-content: space-between;
+  width: 1273px;
+  height: 477px;
+  margin: 220px 192px 0px 135px;
+  &__contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 486px;
+    height: 388px;
+  }
+  &__title {
+    font-size: 36px;
+    line-height: 56px;
+    width: 481px;
+    height: 112px;
+
+    position: relative;
+    &::after {
+      content: " ";
+      display: inline-block;
+      position: absolute;
+      width: 56px;
+      height: 2px;
+      background: #000000;
+      border-radius: 5px;
+      bottom: -26px;
+      left: 0px;
+    }
+  }
+  &__text {
+    position: relative;
+    top: 11px;
+    text-align: left;
+    width: 400px;
+    height: 112px;
+  }
+  &__img {
+    order: -1;
+    width: 650px;
+    height: 477px;
+  }
+}
+
+.download {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  height: 477px;
+  margin: 229px 164px 251px 280px;
+
+  &::before {
+    //content: url("../images/puntos.png"); overflow
+    content: url("../images/puntos3l.png");
+    position: absolute;
+    top: -193px;
+    right: -160px;
+    z-index: -1;
+  }
+
+  &__contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 420px;
+    height: 375px;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 48px;
+    width: 254px;
+    height: 96px;
+
+    position: relative;
+    &::after {
+      content: " ";
+      display: inline-block;
+      position: absolute;
+      width: 56px;
+      height: 2px;
+      background: #000000;
+      border-radius: 5px;
+      bottom: -26px;
+      left: 0px;
+    }
+  }
+
+  &__text {
+    position: relative;
+    top: 11px;
+    text-align: left;
+    width: 380px;
+    height: 120px;
+  }
+  &__img {
+    width: 665px;
+    height: 434px;
+  }
+}
+.testimonials {
+  margin-bottom: 216px;
+  padding: 15px 47px auto 52px;
+  align-items: center;
+
+  &__controls {
+    display: grid;
+    width: 336px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr auto auto auto auto 1fr;
+    column-gap: 18px;
+    margin-top: 42px;
+    margin-left: 582px;
+  }
+}
+.box {
+  position: relative;
+  width: 1120px;
+  height: 361px;
+  padding-top: 64px;
+  background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+  //background-color: #000000;
+  border-radius: 24px;
+  margin: 0px 190px;
+  &::before {
+    content: url("../images/puntos.png");
+    position: absolute;
+    z-index: -1;
+    bottom: 39px;
+    left: -52px;
+  }
+
+  &::after {
+    content: url("../images/puntosWhite.png");
+    position: absolute;
+    top: -15px;
+    right: -47.58px;
+    opacity: 1;
+    z-index: 1;
+  }
+
+  &__tittle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #ffffff;
+
+    margin: auto 297px auto 301px;
+    position: relative;
+    &::after {
+      content: " ";
+      display: inline-block;
+      position: absolute;
+      width: 56px;
+      height: 2px;
+      background: #ffffff;
+      border-radius: 5px;
+      bottom: -26px;
+      left: 233px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    height: 141px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 93px 118px auto;
+  }
+
+  &__person {
+    width: 324px+29px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__photo {
+    width: 141px;
+    height: 141px;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 35px;
+    color: #ffffff;
+    text-align: start;
+  }
+
+  &__work {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.85);
+    text-align: start;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.9);
+
+    width: 410px;
+    height: 120px;
+    text-align: start;
+  }
+}
+
+.latest {
+  text-align: center;
+
+  &__tittle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 56px;
+    color: #000000;
+    text-align: center;
+
+    position: relative;
+    &::after {
+      content: " ";
+      display: inline-block;
+      position: absolute;
+      width: 56px;
+      height: 2px;
+      background: #000000;
+      border-radius: 5px;
+      bottom: -26px;
+      left: 772px;
+    }
+  }
+  &__grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 79px 240px 69px;
+    column-gap: 34px;
+    text-align: start;
+
+    &::before {
+      content: url("../images/puntos.png");
+      position: absolute;
+      z-index: -1;
+      top: -42px;
+      left: -49px;
+    }
+    &::after {
+      content: url("../images/sombra2.png");
+      position: absolute;
+      z-index: -2;
+      left: 813px;
+      top: -169px;
+    }
+  }
+
+  &__img {
+    width: 350px;
+    height: 240px;
+  }
+  &__container {
+    width: 350px;
+    height: 512px;
+    background: #ffffff;
+    /* drop shadow */
+
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+  }
+
+  &__inf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 24px 66px 35px 33px;
+    a {
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 28px;
+      color: #4089ed;
+      &::after {
+        content: url("../images/Vector.png");
+        width: 14.14px;
+        height: 9px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 32px;
+    color: #000000;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #7d7987;
+
+    text-align: start;
+    margin: 12px 0px 25px 0px;
+  }
+}
+
+.footer {
+  width: 1600px;
+  height: 432px;
+  background: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+  margin-top: 202px;
+
+  &__container {
+    height: 201px;
+    display: grid;
+    grid-template-columns: 391px auto auto auto;
+    padding: 118px 190px;
+    column-gap: 145px;
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: #ffffff;
+    &::before {
+      content: "T";
+      display: inline-block;
+      align-items: flex-start;
+      text-align: center;
+      width: 41px;
+      height: 41px;
+      margin-right: 11px;
+      padding-top: 5px;
+      background: #ffffff;
+      box-sizing: border-box;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 33px;
+
+      color: #5b9bf3;
+    }
+  }
+  &__principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__text {
+    text-align: start;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+
+    color: #ffffff;
+  }
+  &__legal {
+    text-align: start;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    /* identical to box height, or 175% */
+
+    color: #ffffff;
+  }
+  &__first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-weight: 700;
+    font-size: 20px;
+    color: #ffffff;
+  }
+  &__item {
+    a {
+      font-weight: 300;
+      font-size: 18px;
+      color: #ffffff;
+    }
+  }
+}
